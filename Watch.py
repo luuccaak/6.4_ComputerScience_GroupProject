@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import os   #realtive Paths for Github 
+import os   #Path-usage for Github 
 
 # Configure the Streamlit app page
 st.set_page_config(
@@ -31,7 +31,7 @@ if 'watches_data' not in st.session_state:
 
 # Function to load CSV data containing watch information
 def load_csv_data():
-    file_path_watchdata = os.path.join('watchdata5.csv')  # Path to the CSV file 
+    file_path_watchdata = os.path.join('watch_data.csv')  # Path to the CSV file 
     
     try:
         # Read the CSV file and store it in the session state
