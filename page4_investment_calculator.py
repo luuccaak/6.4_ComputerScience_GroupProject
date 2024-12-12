@@ -74,9 +74,9 @@ def investment_calculator():
     )  # Choose between conservative, expected, or ambitious ROI scenarios
 
     rate_of_return = {  # Map scenarios to specific ROI percentages
-        "Defensive scenario (6%)": 0.06,
-        "Expected scenario (12%)": 0.12,
-        "Ambitious scenario (18%)": 0.18
+        "Defensive scenario (6%)": 0.02,
+        "Expected scenario (12%)": 0.04,
+        "Ambitious scenario (18%)": 0.08
     }[scenario]
 
     # Perform investment calculations
