@@ -50,7 +50,7 @@ The **Watch Investment App** is designed to guide users in selecting, analyzing,
    ```
 
 4. **Access the app**:
-   Open your browser and go to `http://localhost:8501`.
+   Browser should open automatically; if not open your browser and go to `http://localhost:8501`.
 
 ---
 
@@ -65,7 +65,7 @@ The **Watch Investment App** is designed to guide users in selecting, analyzing,
    - Submit the form to receive personalized watch recommendations.
 
 2. **View Recommendations**:
-   - Browse watches tailored to your profile.
+   - Browse watch tailored to your profile or other alternatives.
    - Use currency conversion to see prices in your preferred currency.
    - Select a watch for more details such as general information or price development.
 
@@ -84,13 +84,14 @@ The **Watch Investment App** is designed to guide users in selecting, analyzing,
 ### Core Files
 
 1. **`Watch.py`**:
-   - Entry point for the application.
+   - Entry point for the application (Main Page).
    - Manages navigation between pages (Questionnaire, Recommendations, Details, Investment Calculator).
-   - Loads `watchdata5.csv` for watch information.
+   - Loads `watch_data.csv` for watch information.
 
 2. **`page1_questionnaire.py`**:
    - Implements the questionnaire functionality.
    - Utilizes K-Nearest Neighbors (KNN) for watch recommendations.
+   - Loads `investment_data.csv` for watch information.
    - Preprocesses user input and dataset for machine learning predictions.
 
 3. **`page2_recommendations.py`**:
@@ -110,17 +111,21 @@ The **Watch Investment App** is designed to guide users in selecting, analyzing,
    - Handles API calls for fetching live exchange rates.
    - Caches results to optimize performance.
 
-7. **`watchdata5.csv`**:
+   **`watch_data.csv`**:
    - Dataset containing watch details (brand, price, historical data).
    - Required for recommendations and detailed insights.
 
+   **`investment_data.csv`**:
+   - Dataset containing datasets of all watches.
+   - Required for machine learning part.
+
 ### External Dependencies
 
-- **Streamlit**: Builds an interactive UI for the app.
-- **Scikit-learn**: Implements machine learning models for recommendations.
-- **Matplotlib**: Creates visualizations for price history.
-- **Pandas**: Processes CSV data and user inputs.
-- **Requests**: Fetches live exchange rates from the API.
+- **streamlit**: Builds an interactive UI for the app.
+- **pandas**: Processes CSV data and user inputs.
+- **matplotlib**: Creates visualizations for price history.
+- **requests**: Fetches live exchange rates from the API.
+- **scikit-learn**: Implements machine learning models for recommendations.
 
 ---
 
@@ -128,9 +133,10 @@ The **Watch Investment App** is designed to guide users in selecting, analyzing,
 
 1. **Input**:
    - User data from sliders and dropdowns (income, investment amount, age, risk tolerance).
-   - Watch data from `watchdata5.csv`.
+   - Watch data from `watch_data.csv`.
 2. **Processing**:
    - Machine learning (k-nearest neighbour algorithm) for personalized recommendations.
+   - Data sets from `investment_data.csv`.
    - Currency conversion using live exchange rates.
 3. **Output**:
    - Display recommendations, detailed watch information, and investment projections.
@@ -143,7 +149,7 @@ The **Watch Investment App** is designed to guide users in selecting, analyzing,
 - **Scikit-learn Documentation**: [https://scikit-learn.org](https://scikit-learn.org)
 - **Matplotlib Documentation**: [https://matplotlib.org](https://matplotlib.org)
 - **Free Currency API**: [https://freecurrencyapi.com](https://freecurrencyapi.com)
-- **ChatGPT**: Code optimization, debugging assistance and structure of ReadMe file
+- **ChatGPT**: Code optimization, debugging assistance and structure of ReadMe file.
 
 ---
 
