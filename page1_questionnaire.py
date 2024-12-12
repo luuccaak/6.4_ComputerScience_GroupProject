@@ -8,7 +8,7 @@ from api import fetch_exchange_rates  # Import the centralized API logic
 
 def questionnaire():
     # Load the first dataset for machine learning
-    file_path = os.path.join("invest4_data_cleaned.csv")
+    file_path = os.path.join("investment_data.csv")
     df_ml = pd.read_csv(file_path, delimiter=',')
     
     # Data preprocessing for machine learning
