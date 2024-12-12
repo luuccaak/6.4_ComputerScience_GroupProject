@@ -13,6 +13,23 @@ st.set_page_config(
     }
 )
 
+import streamlit as st
+
+# Initialize session state
+if "show_intro" not in st.session_state:
+    st.session_state.show_intro = True
+
+# Function to proceed to the next section
+def go_to_next():
+    st.session_state.show_intro = False
+
+# Display introduction video
+if st.session_state.show_intro:
+    st.title("Welcome to Times Shares Investment!")
+    st.video("CS_6.4_Video (Audio).mp4")
+    st.write("Please watch the introduction video. Click **Next** to proceed.")
+    st.button("Next", on_click=go_to_next)
+
 # Import functions for each page
 from page1_questionnaire import questionnaire
 from page2_recommendations import recommend_watches
