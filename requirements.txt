@@ -1,9 +1,8 @@
 #Phyton-Packages
 
 
-matplotlib>=3.8.4
-numpy>=1.22.4,<2.0
-pandas>=2.2.3
-requests>=2.32.3
 streamlit>=1.32.0
-sklearn>=1.6
+pandas>=2.2.3
+matplotlib>=3.8.4
+requests>=2.32.3
+scikit-learn>=1.6.0
