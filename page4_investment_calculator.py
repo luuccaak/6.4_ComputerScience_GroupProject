@@ -70,13 +70,13 @@ def investment_calculator():
 
     scenario = st.radio(
         "Select ROI scenario:",
-        ["Defensive scenario (6%)", "Expected scenario (12%)", "Ambitious scenario (18%)"]
+        ["Defensive scenario (2%)", "Expected scenario (4%)", "Ambitious scenario (8%)"]
     )  # Choose between conservative, expected, or ambitious ROI scenarios
 
     rate_of_return = {  # Map scenarios to specific ROI percentages
-        "Defensive scenario (6%)": 0.02,
-        "Expected scenario (12%)": 0.04,
-        "Ambitious scenario (18%)": 0.08
+        "Defensive scenario (2%)": 0.02,
+        "Expected scenario (4%)": 0.04,
+        "Ambitious scenario (8%)": 0.08
     }[scenario]
 
     # Perform investment calculations
