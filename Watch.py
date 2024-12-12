@@ -26,7 +26,7 @@ def go_to_next():
 # Display introduction video
 if st.session_state.show_intro:
     st.title("Welcome to Times Shares Investment!")
-    st.video('CS_6.4_Video (Audio).mp4')
+    st.video('CS_presentation.mp4')
     st.write("Please watch the introduction video. Click **Next** to proceed.")
     st.button("Next", on_click=go_to_next)
 
