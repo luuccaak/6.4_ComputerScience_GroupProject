@@ -43,21 +43,22 @@ The **Watch Investment App** is designed to guide users in selecting, analyzing,
    pip install -r requirements.txt
    ```
 
-3. **Prepare datasets**:
-   Place `watchdata5.csv` in the project root directory. Ensure this file contains the required watch information.
-
-4. **Run the application**:
+3. **Run the application**:
    Execute the main file `Watch.py` using Streamlit:
    ```bash
    streamlit run Watch.py
    ```
 
-5. **Access the app**:
+4. **Access the app**:
    Open your browser and go to `http://localhost:8501`.
 
 ---
 
 ## Walkthrough
+
+0. **Watch the Introduction Video**
+   - Watch the video and get an overview of the application
+   - Proceed with the actual application by pressing "Next"
 
 1. **Start at the Questionnaire**:
    - Navigate to the initial page to provide income, investment amount, age, and risk tolerance.
@@ -66,11 +67,11 @@ The **Watch Investment App** is designed to guide users in selecting, analyzing,
 2. **View Recommendations**:
    - Browse watches tailored to your profile.
    - Use currency conversion to see prices in your preferred currency.
-   - Select a watch for more details.
+   - Select a watch for more details such as general information or price development.
 
 3. **Explore Watch Details**:
    - View in-depth data, including price history and brand details.
-   - Analyze historical price trends with interactive charts.
+   - Analyze historical prices.
 
 4. **Investment Calculation**:
    - Simulate potential returns by adjusting investment amount, time horizon, and risk scenarios.
@@ -126,10 +127,10 @@ The **Watch Investment App** is designed to guide users in selecting, analyzing,
 ## Data Flow
 
 1. **Input**:
-   - User data from sliders and dropdowns (income, age, risk tolerance).
+   - User data from sliders and dropdowns (income, investment amount, age, risk tolerance).
    - Watch data from `watchdata5.csv`.
 2. **Processing**:
-   - Machine learning for personalized recommendations.
+   - Machine learning (k-nearest neighbour algorithm) for personalized recommendations.
    - Currency conversion using live exchange rates.
 3. **Output**:
    - Display recommendations, detailed watch information, and investment projections.
@@ -142,7 +143,7 @@ The **Watch Investment App** is designed to guide users in selecting, analyzing,
 - **Scikit-learn Documentation**: [https://scikit-learn.org](https://scikit-learn.org)
 - **Matplotlib Documentation**: [https://matplotlib.org](https://matplotlib.org)
 - **Free Currency API**: [https://freecurrencyapi.com](https://freecurrencyapi.com)
-- **ChatGPT**: Code optimization and assistance.
+- **ChatGPT**: Code optimization, debugging assistance and structure of ReadMe file
 
 ---
 
