@@ -55,12 +55,12 @@ def investment_calculator():
         converted_price = watch['Price'] * exchange_rate  # Convert the price
         st.write(f"**Price ({selected_currency}):** {converted_price:,.0f} {selected_currency}")  # Display the converted price
 
-    # Collect user inputs for investment calculation
+   # Collect user inputs for investment calculation
     investment_amount = st.slider(
-        f"Select your investment amount ({selected_currency}):",
+        f"Select your investment amount (USD)",
         min_value=100,  # Minimum investment is 100 in the selected currency
         max_value=int(max_investment),  # Maximum investment is the watch's price
-        value=int(watch['Price'] * exchange_rate),  # Default value is the watch's converted price
+        value=int(watch['Price']),  # Default value is the watch's converted price
         step=100  # Allow users to adjust in steps of 100
     )
 
