@@ -16,7 +16,7 @@ The **Watch Investment App** is designed to guide users in selecting, analyzing,
 ## Features
 
 1. **User Questionnaire**: Collects income, investment amount, age, and risk tolerance to recommend watches tailored to individual profiles.
-2. **Watch Recommendations**: Displays personalized watch recommendations with brand details, pricing, and currency conversion options.
+2. **Watch Recommendations**: Displays personalized watch recommendations and other alternatives with brand details, pricing, and currency conversion options.
 3. **Detailed Watch Insights**: Offers in-depth information about the selected watch, including historical data.
 4. **Investment Calculator**: Simulates potential investment returns over different time horizons and scenarios.
 5. **Real-Time Currency Conversion**: Converts prices to the user’s preferred currency using live exchange rates.
