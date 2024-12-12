@@ -3,17 +3,15 @@ Group No. 6.4
 
 Streamlit Group Project for Fundamentals in Computer Science
 
-# Watch Investment App
+# Time Shares Investment App
 
 ## Purpose
-The **Watch Investment App** is designed to guide users in selecting, analyzing, and investing in luxury watches. It provides:
+The **Watch Investment App** is designed to guide users in selecting, analyzing, and investing fractionally in luxury watches. It provides:
 
-- Personalized recommendations based on user profiles.
+- Personalized recommendations based on user investment profile.
 - Real-time currency conversion.
 - Detailed watch insights.
 - An investment calculator for projecting returns over time.
-
-This application is ideal for users interested in blending personal luxury with smart investment strategies.
 
 ---
 
@@ -21,7 +19,7 @@ This application is ideal for users interested in blending personal luxury with 
 
 1. **User Questionnaire**: Collects income, investment amount, age, and risk tolerance to recommend watches tailored to individual profiles.
 2. **Watch Recommendations**: Displays personalized watch recommendations with brand details, pricing, and currency conversion options.
-3. **Detailed Watch Insights**: Offers in-depth information about the selected watch, including price trends and historical data.
+3. **Detailed Watch Insights**: Offers in-depth information about the selected watch, including historical data.
 4. **Investment Calculator**: Simulates potential investment returns over different time horizons and scenarios.
 5. **Real-Time Currency Conversion**: Converts prices to the user’s preferred currency using live exchange rates.
 
